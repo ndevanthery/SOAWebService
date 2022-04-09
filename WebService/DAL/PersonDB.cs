@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class PersonDB : IPersonDB
+    public class PersonDB : IPersonDB
     {
         //---------------------------------------------------
         // CONFIGURATION
@@ -21,9 +21,6 @@ namespace DAL
         {
             connectionString = ConfigurationManager.ConnectionStrings["MyDatabase"].ConnectionString;
         }
-
-
-
 
 
         public Person AddPerson(Person newPerson)
@@ -63,24 +60,112 @@ namespace DAL
             return result;
         }
 
-        public Person DeletePerson(Person person)
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public Person getPersonByUID(string UID)
         {
-            throw new NotImplementedException();
+            Person result = null;
+
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(connectionString))
+                {
+                    string query = "SELECT * FROM Person WHERE UID = @UID;";
+                    SqlCommand cmd = new SqlCommand(query, cn);
+                    cmd.Parameters.AddWithValue("@UID", UID);
+                    cn.Open();
+
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        if (dr.Read())
+                        {
+                            result = new Person();
+
+                            result.id = (int)dr["id"];
+                            result.UID = (string)dr["UID"];
+                            result.username = (string)dr["username"];
+                            result.quota = (float)dr["quota"];
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+            return result;
         }
 
         public Person GetPersonByUsername(string username)
         {
-            throw new NotImplementedException();
+            Person result = null;
+
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(connectionString))
+                {
+                    string query = "SELECT * FROM Person WHERE username = @username;";
+                    SqlCommand cmd = new SqlCommand(query, cn);
+                    cmd.Parameters.AddWithValue("@username", username);
+                    cn.Open();
+
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        if (dr.Read())
+                        {
+                            result = new Person();
+
+                            result.id = (int)dr["id"];
+                            result.UID = (string)dr["UID"];
+                            result.username = (string)dr["username"];
+                            result.quota = (float)dr["quota"];
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+            return result;
         }
 
-        public Person UpdatePerson(Person updatedPerson)
+        public Person UpdatePersonQuota(int id, float quota)
         {
-            throw new NotImplementedException();
+            Person result = null;
+
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(connectionString))
+                {
+                    string query = "UPDATE Person SET Quota = @quota WHERE id = @id";
+
+                    SqlCommand cmd = new SqlCommand(query, cn);
+                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.Parameters.AddWithValue("@quota", quota);
+                    cn.Open();
+
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        if (dr.Read())
+                        {
+                            result = new Person();
+
+                            result.id = (int)dr["id"];
+                            result.UID = (string)dr["UID"];
+                            result.username = (string)dr["username"];
+                            result.quota = (float)dr["quota"];
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+            return result;
         }
     }
 }
