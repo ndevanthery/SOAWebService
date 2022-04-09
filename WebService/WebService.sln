@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService", "WebService\WebService.csproj", "{BFC5B945-126B-4A2C-94DF-754B048F3AF5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B0914574-0156-45C0-BAB0-5106D2DB73CA} = {B0914574-0156-45C0-BAB0-5106D2DB73CA}
+		{046F5A78-5197-472F-8485-E0E608293605} = {046F5A78-5197-472F-8485-E0E608293605}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App_console", "App_console\App_console.csproj", "{ED5C3D28-9BC8-43C2-9651-6237838DED46}"
 EndProject
@@ -19,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLL", "BLL\BLL.csproj", "{0
 		{B0914574-0156-45C0-BAB0-5106D2DB73CA} = {B0914574-0156-45C0-BAB0-5106D2DB73CA}
 		{85873CFC-54A1-446A-BBA4-DDA2BDEBF091} = {85873CFC-54A1-446A-BBA4-DDA2BDEBF091}
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientForWebService", "ClientForWebService\ClientForWebService.csproj", "{1DB26882-2EC7-44C5-A2D5-CE7E0D1BBA2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +52,10 @@ Global
 		{046F5A78-5197-472F-8485-E0E608293605}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{046F5A78-5197-472F-8485-E0E608293605}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{046F5A78-5197-472F-8485-E0E608293605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DB26882-2EC7-44C5-A2D5-CE7E0D1BBA2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DB26882-2EC7-44C5-A2D5-CE7E0D1BBA2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DB26882-2EC7-44C5-A2D5-CE7E0D1BBA2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DB26882-2EC7-44C5-A2D5-CE7E0D1BBA2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

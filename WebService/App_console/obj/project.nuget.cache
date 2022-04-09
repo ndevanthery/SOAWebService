@@ -1,8 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "8wmx387px1BC2JzuCSX/C62QSDBkQHm+bJnlzYNH1L0HfD1tlvemSrTu3UGjMcxxECdJ/bObFV4r3mLvDMkoYw==",
+  "dgSpecHash": "Vs1GOnu/oaI46JknMW+q70M5HDnqaqQvYcGuQvCbnV2t7MaNdv0D34Qm3kYRsBxYMpdEAfg/QUk8nN0F4iypTg==",
   "success": true,
   "projectFilePath": "C:\\Users\\devan\\source\\repos\\SOAWebService\\WebService\\App_console\\App_console.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\devan\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\devan\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\devan\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\devan\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\devan\\.nuget\\packages\\system.private.servicemodel\\4.8.1\\system.private.servicemodel.4.8.1.nupkg.sha512",
+    "C:\\Users\\devan\\.nuget\\packages\\system.reflection.dispatchproxy\\4.7.1\\system.reflection.dispatchproxy.4.7.1.nupkg.sha512",
+    "C:\\Users\\devan\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\devan\\.nuget\\packages\\system.security.cryptography.cng\\4.7.0\\system.security.cryptography.cng.4.7.0.nupkg.sha512",
+    "C:\\Users\\devan\\.nuget\\packages\\system.security.cryptography.pkcs\\4.7.0\\system.security.cryptography.pkcs.4.7.0.nupkg.sha512",
+    "C:\\Users\\devan\\.nuget\\packages\\system.security.cryptography.xml\\4.7.0\\system.security.cryptography.xml.4.7.0.nupkg.sha512",
+    "C:\\Users\\devan\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
+    "C:\\Users\\devan\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\devan\\.nuget\\packages\\system.servicemodel.duplex\\4.8.1\\system.servicemodel.duplex.4.8.1.nupkg.sha512",
+    "C:\\Users\\devan\\.nuget\\packages\\system.servicemodel.http\\4.8.1\\system.servicemodel.http.4.8.1.nupkg.sha512",
+    "C:\\Users\\devan\\.nuget\\packages\\system.servicemodel.nettcp\\4.8.1\\system.servicemodel.nettcp.4.8.1.nupkg.sha512",
+    "C:\\Users\\devan\\.nuget\\packages\\system.servicemodel.primitives\\4.8.1\\system.servicemodel.primitives.4.8.1.nupkg.sha512",
+    "C:\\Users\\devan\\.nuget\\packages\\system.servicemodel.security\\4.8.1\\system.servicemodel.security.4.8.1.nupkg.sha512",
+    "C:\\Users\\devan\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

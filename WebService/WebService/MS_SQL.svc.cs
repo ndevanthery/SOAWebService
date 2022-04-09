@@ -4,6 +4,9 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using DTO;
+using BLL;
+
 
 namespace WebService
 {
@@ -13,14 +16,17 @@ namespace WebService
     {
         public float AddAmount(string UID, float quotas)
         {
-            Console.WriteLine(UID + quotas);
-            return quotas;
+            Person person = new Person();
+            return quotas + 10000;
         }
 
         public float transferMoney(string username, float quotas)
         {
             Console.WriteLine(username + quotas);
-            return quotas;
+            return quotas + 10000;
+           
         }
+
+       
     }
 }
