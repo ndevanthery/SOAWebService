@@ -9,12 +9,12 @@ namespace BLL
 {
     public interface IPersonManager
     {
-        public Person AddPerson(Person newPerson);
+        Person AddPerson(Person newPerson);
 
-        public Person UpdatePersonQuota(int id, float quota);
+        Person UpdatePersonQuota(int id, float quota);
 
-        public Person getPersonByUID(String UID);
+        Person getPersonByUID(String UID);
 
-        public Person GetPersonByUsername(String username);
+        Person GetPersonByUsername(String username);
     }
 }

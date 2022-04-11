@@ -1,7 +1,0 @@
-C:\Users\devan\source\repos\SOAWebService\WebService\WebService\bin\WebService.dll.config
-C:\Users\devan\source\repos\SOAWebService\WebService\WebService\bin\WebService.dll
-C:\Users\devan\source\repos\SOAWebService\WebService\WebService\bin\WebService.pdb
-C:\Users\devan\source\repos\SOAWebService\WebService\WebService\obj\Debug\WebService.csproj.AssemblyReference.cache
-C:\Users\devan\source\repos\SOAWebService\WebService\WebService\obj\Debug\WebService.csproj.CoreCompileInputs.cache
-C:\Users\devan\source\repos\SOAWebService\WebService\WebService\obj\Debug\WebService.dll
-C:\Users\devan\source\repos\SOAWebService\WebService\WebService\obj\Debug\WebService.pdb

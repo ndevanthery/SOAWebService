@@ -1,0 +1,11 @@
+C:\Users\devan\source\repos\SOAWebService\WebService\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\devan\source\repos\SOAWebService\WebService\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\devan\source\repos\SOAWebService\WebService\BLL\bin\Debug\BLL.dll
+C:\Users\devan\source\repos\SOAWebService\WebService\BLL\bin\Debug\BLL.pdb
+C:\Users\devan\source\repos\SOAWebService\WebService\BLL\bin\Debug\DAL.dll
+C:\Users\devan\source\repos\SOAWebService\WebService\BLL\bin\Debug\DTO.dll
+C:\Users\devan\source\repos\SOAWebService\WebService\BLL\bin\Debug\DAL.pdb
+C:\Users\devan\source\repos\SOAWebService\WebService\BLL\bin\Debug\DTO.pdb
+C:\Users\devan\source\repos\SOAWebService\WebService\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\devan\source\repos\SOAWebService\WebService\BLL\obj\Debug\BLL.dll
+C:\Users\devan\source\repos\SOAWebService\WebService\BLL\obj\Debug\BLL.pdb

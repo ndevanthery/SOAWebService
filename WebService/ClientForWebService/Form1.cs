@@ -23,7 +23,7 @@ namespace ClientForWebService
             float amount = float.Parse( txtAmountUID.Text);
             float pricePage = (float)0.10;
 
-            PrinterService.MS_SQLClient client = new PrinterService.MS_SQLClient();
+            myService.IService1 client = new myService.Service1Client();
 
             float newAmount = client.AddAmount(UID,amount);
 
