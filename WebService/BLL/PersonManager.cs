@@ -32,7 +32,7 @@ namespace BLL
             return PersonDb.GetPersonByUsername(username);
         }
 
-        public Person UpdatePersonQuota(int id, float quota)
+        public Person UpdatePersonQuota(int id, double quota)
         {
             return PersonDb.UpdatePersonQuota(id, quota);
         }

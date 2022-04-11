@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using DTO;
 
 namespace WcfService1
 {
@@ -14,10 +15,10 @@ namespace WcfService1
     {
 
         [OperationContract]
-        float AddAmount(string UID, float quotas);
+        Person AddAmount(string UID, double quotas);
 
         [OperationContract]
-        float transferMoney(String username, float quotas);
+        Person transferMoney(String username, double quotas);
         // TODO: Add your service operations here
     }
 

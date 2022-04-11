@@ -23,15 +23,14 @@ namespace ClientForWebService
             float amount = float.Parse( txtAmountUID.Text);
             float pricePage = (float)0.10;
 
-            myService.IService1 client = new myService.Service1Client();
+            ServiceReference1.IService1 client = new ServiceReference1.Service1Client();
 
-            float newAmount = client.AddAmount(UID,amount);
-
-            txtResUID.Text = UID;
-            txtResUsername.Text = "TO DEVELOP";
-            txtResOldAmount.Text = "TO DEVELOP";
-            txtResNewAmount.Text = newAmount.ToString();
-            txtResQuota.Text = (newAmount/pricePage).ToString();
+            var person = client.AddAmount(UID, amount);
+            txtResUID.Text = person.UID;
+            txtResUsername.Text = person.username;
+            txtResOldAmount.Text = (person.quota-(double)amount).ToString();
+            txtResNewAmount.Text = person.quota.ToString();
+            txtResQuota.Text = ((int)(person.quota/pricePage)).ToString();
         }
 
         private void btnTransferUsername_Click(object sender, EventArgs e)

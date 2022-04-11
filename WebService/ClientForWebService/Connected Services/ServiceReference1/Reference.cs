@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace myService
+namespace ServiceReference1
 {
     using System.Runtime.Serialization;
     
@@ -80,31 +80,31 @@ namespace myService
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3-preview3.21351.2")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="myService.IService1")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService1")]
     public interface IService1
     {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddAmount", ReplyAction="http://tempuri.org/IService1/AddAmountResponse")]
-        myService.Person AddAmount(string UID, double quotas);
+        ServiceReference1.Person AddAmount(string UID, double quotas);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddAmount", ReplyAction="http://tempuri.org/IService1/AddAmountResponse")]
-        System.Threading.Tasks.Task<myService.Person> AddAmountAsync(string UID, double quotas);
+        System.Threading.Tasks.Task<ServiceReference1.Person> AddAmountAsync(string UID, double quotas);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/transferMoney", ReplyAction="http://tempuri.org/IService1/transferMoneyResponse")]
-        myService.Person transferMoney(string username, double quotas);
+        ServiceReference1.Person transferMoney(string username, double quotas);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/transferMoney", ReplyAction="http://tempuri.org/IService1/transferMoneyResponse")]
-        System.Threading.Tasks.Task<myService.Person> transferMoneyAsync(string username, double quotas);
+        System.Threading.Tasks.Task<ServiceReference1.Person> transferMoneyAsync(string username, double quotas);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3-preview3.21351.2")]
-    public interface IService1Channel : myService.IService1, System.ServiceModel.IClientChannel
+    public interface IService1Channel : ServiceReference1.IService1, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3-preview3.21351.2")]
-    public partial class Service1Client : System.ServiceModel.ClientBase<myService.IService1>, myService.IService1
+    public partial class Service1Client : System.ServiceModel.ClientBase<ServiceReference1.IService1>, ServiceReference1.IService1
     {
         
         /// <summary>
@@ -147,22 +147,22 @@ namespace myService
         {
         }
         
-        public myService.Person AddAmount(string UID, double quotas)
+        public ServiceReference1.Person AddAmount(string UID, double quotas)
         {
             return base.Channel.AddAmount(UID, quotas);
         }
         
-        public System.Threading.Tasks.Task<myService.Person> AddAmountAsync(string UID, double quotas)
+        public System.Threading.Tasks.Task<ServiceReference1.Person> AddAmountAsync(string UID, double quotas)
         {
             return base.Channel.AddAmountAsync(UID, quotas);
         }
         
-        public myService.Person transferMoney(string username, double quotas)
+        public ServiceReference1.Person transferMoney(string username, double quotas)
         {
             return base.Channel.transferMoney(username, quotas);
         }
         
-        public System.Threading.Tasks.Task<myService.Person> transferMoneyAsync(string username, double quotas)
+        public System.Threading.Tasks.Task<ServiceReference1.Person> transferMoneyAsync(string username, double quotas)
         {
             return base.Channel.transferMoneyAsync(username, quotas);
         }

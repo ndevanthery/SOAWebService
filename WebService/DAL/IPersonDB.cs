@@ -11,7 +11,7 @@ namespace DAL
     {
         Person AddPerson(Person newPerson);
 
-        Person UpdatePersonQuota(int id,float quota);
+        Person UpdatePersonQuota(int id,double quota);
 
         Person getPersonByUID(String UID);
 

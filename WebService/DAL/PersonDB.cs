@@ -18,7 +18,7 @@ namespace DAL
         private string connectionString = null;
         public PersonDB()
         {
-            connectionString = ConfigurationManager.ConnectionStrings["MyDatabase"].ConnectionString;
+            connectionString = ConfigurationManager.ConnectionStrings["RemoteDB"].ConnectionString;
         }
 
 
@@ -46,7 +46,7 @@ namespace DAL
                             result.id = (int)dr["id"];
                             result.UID = (string)dr["UID"];
                             result.username = (string)dr["username"];
-                            result.quota = (float)dr["quota"];
+                            result.quota = (double)dr["quota"];
                         }
                     }
                 }
@@ -82,7 +82,8 @@ namespace DAL
                             result.id = (int)dr["id"];
                             result.UID = (string)dr["UID"];
                             result.username = (string)dr["username"];
-                            result.quota = (float)dr["quota"];
+                            result.quota = (double)dr["quota"];
+                            
                         }
                     }
                 }
@@ -117,7 +118,7 @@ namespace DAL
                             result.id = (int)dr["id"];
                             result.UID = (string)dr["UID"];
                             result.username = (string)dr["username"];
-                            result.quota = (float)dr["quota"];
+                            result.quota = (double)dr["quota"];
                         }
                     }
                 }
@@ -130,7 +131,7 @@ namespace DAL
             return result;
         }
 
-        public Person UpdatePersonQuota(int id, float quota)
+        public Person UpdatePersonQuota(int id, double quota)
         {
             Person result = null;
 
@@ -154,7 +155,7 @@ namespace DAL
                             result.id = (int)dr["id"];
                             result.UID = (string)dr["UID"];
                             result.username = (string)dr["username"];
-                            result.quota = (float)dr["quota"];
+                            result.quota = (double)dr["quota"];
                         }
                     }
                 }

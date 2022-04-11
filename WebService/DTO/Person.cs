@@ -11,6 +11,6 @@ namespace DTO
         public int id { get; set; }
         public string UID { get; set; }
         public string username { get; set; }
-        public float quota { get; set; }
+        public double quota { get; set; }
     }
 }

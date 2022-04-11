@@ -7,10 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Connected Services\myService\Reference.cs" />
     <Compile Remove="Connected Services\PrinterService\Reference.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Connected Services\myService\Reference.cs" />
     <None Include="Connected Services\PrinterService\Reference.cs" />
   </ItemGroup>
 
