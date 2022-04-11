@@ -24,12 +24,16 @@ namespace WcfService1
                 IPersonDB personDB = new PersonDB();
                 PersonManager manager = new PersonManager(personDB);
                 Person p = manager.getPersonByUID(UID);
-                manager.UpdatePersonQuota(p.id, quotas + p.quota);
-                p_m = manager.getPersonByUID(UID);
+                if(p!=null)
+                {
+                    manager.UpdatePersonQuota(p.id, quotas + p.quota);
+                    p_m = manager.getPersonByUID(UID);
+                }
+                
             }
             catch
             {
-
+                Console.WriteLine("error occured");
             }
     
             return p_m;
@@ -38,11 +42,21 @@ namespace WcfService1
 
         public Person transferMoney(string username, double quotas)
         {
-            IPersonDB personDB = new PersonDB();
-            PersonManager manager = new PersonManager(personDB);
-            Person p = manager.GetPersonByUsername(username);
-            manager.UpdatePersonQuota(p.id, quotas + p.quota);
-            Person p_m = manager.GetPersonByUsername(username);
+            Person p_m = null;
+
+            try
+            {
+                IPersonDB personDB = new PersonDB();
+                PersonManager manager = new PersonManager(personDB);
+                Person p = manager.GetPersonByUsername(username);
+                manager.UpdatePersonQuota(p.id, quotas + p.quota);
+                p_m = manager.GetPersonByUsername(username);
+            }
+            catch
+            {
+                Console.WriteLine("error occured");
+            }
+            
 
 
 

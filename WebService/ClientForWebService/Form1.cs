@@ -29,11 +29,15 @@ namespace ClientForWebService
                 ServiceReference1.IService1 client = new ServiceReference1.Service1Client();
 
                 var person = client.AddAmount(UID, amount);
-                txtResUID.Text = person.UID;
-                txtResUsername.Text = person.username;
-                txtResOldAmount.Text = (person.quota - (double)amount).ToString();
-                txtResNewAmount.Text = person.quota.ToString();
-                txtResQuota.Text = ((int)(person.quota / pricePage)).ToString();
+                if(person!=null)
+                {
+                    txtResUID.Text = person.UID;
+                    txtResUsername.Text = person.username;
+                    txtResOldAmount.Text = (person.quota - (double)amount).ToString();
+                    txtResNewAmount.Text = person.quota.ToString();
+                    txtResQuota.Text = ((int)(person.quota / pricePage)).ToString();
+                }
+                
 
             }
             catch

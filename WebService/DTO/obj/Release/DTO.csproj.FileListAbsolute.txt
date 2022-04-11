@@ -1,0 +1,6 @@
+C:\Users\devan\source\repos\SOAWebService\WebService\DTO\bin\Release\DTO.dll
+C:\Users\devan\source\repos\SOAWebService\WebService\DTO\bin\Release\DTO.pdb
+C:\Users\devan\source\repos\SOAWebService\WebService\DTO\obj\Release\DTO.csproj.AssemblyReference.cache
+C:\Users\devan\source\repos\SOAWebService\WebService\DTO\obj\Release\DTO.csproj.CoreCompileInputs.cache
+C:\Users\devan\source\repos\SOAWebService\WebService\DTO\obj\Release\DTO.dll
+C:\Users\devan\source\repos\SOAWebService\WebService\DTO\obj\Release\DTO.pdb

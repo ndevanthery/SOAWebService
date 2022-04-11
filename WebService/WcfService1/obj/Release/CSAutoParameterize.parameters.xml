@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="RemoteDB-Web.config Connection String" description="RemoteDB Connection String used in web.config by the application to access the database." defaultValue="Data Source=153.109.124.35;Initial Catalog=NicoAbdu_webService;Integrated Security=False;User Id=6231db;Password=Pwd46231.;MultipleActiveResultSets=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\devan\\source\\repos\\SOAWebService\\WebService\\WcfService1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='RemoteDB']/@connectionString" />
+  </parameter>
+</parameters>
