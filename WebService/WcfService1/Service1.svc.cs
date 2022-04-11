@@ -17,14 +17,21 @@ namespace WcfService1
     {
         public Person AddAmount(string UID, double quotas)
         {
-            IPersonDB personDB = new PersonDB();
-            PersonManager manager = new PersonManager(personDB);
-            Person p= manager.getPersonByUID(UID);
-            manager.UpdatePersonQuota(p.id, quotas+ p.quota);
-            Person p_m =manager.getPersonByUID(UID);
+            Person p_m = null;
 
+            try
+            {
+                IPersonDB personDB = new PersonDB();
+                PersonManager manager = new PersonManager(personDB);
+                Person p = manager.getPersonByUID(UID);
+                manager.UpdatePersonQuota(p.id, quotas + p.quota);
+                p_m = manager.getPersonByUID(UID);
+            }
+            catch
+            {
 
-
+            }
+    
             return p_m;
             
         }

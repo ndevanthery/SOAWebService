@@ -19,23 +19,52 @@ namespace ClientForWebService
 
         private void btnTransferUID_Click(object sender, EventArgs e)
         {
-            string UID = txtUID.Text;
-            float amount = float.Parse( txtAmountUID.Text);
-            float pricePage = (float)0.10;
+            
+            try
+            {
+                string UID = txtUID.Text;
+                float amount = float.Parse(txtAmountUID.Text);
+                float pricePage = (float)0.10;
 
-            ServiceReference1.IService1 client = new ServiceReference1.Service1Client();
+                ServiceReference1.IService1 client = new ServiceReference1.Service1Client();
 
-            var person = client.AddAmount(UID, amount);
-            txtResUID.Text = person.UID;
-            txtResUsername.Text = person.username;
-            txtResOldAmount.Text = (person.quota-(double)amount).ToString();
-            txtResNewAmount.Text = person.quota.ToString();
-            txtResQuota.Text = ((int)(person.quota/pricePage)).ToString();
+                var person = client.AddAmount(UID, amount);
+                txtResUID.Text = person.UID;
+                txtResUsername.Text = person.username;
+                txtResOldAmount.Text = (person.quota - (double)amount).ToString();
+                txtResNewAmount.Text = person.quota.ToString();
+                txtResQuota.Text = ((int)(person.quota / pricePage)).ToString();
+
+            }
+            catch
+            {
+                
+            }
+            
         }
 
         private void btnTransferUsername_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string username = txtUsername.Text;
+                float amount = float.Parse(txtAmountUsername.Text);
+                float pricePage = (float)0.10;
 
+                ServiceReference1.IService1 client = new ServiceReference1.Service1Client();
+
+                var person = client.transferMoney(username, amount);
+                txtResUID.Text = person.UID;
+                txtResUsername.Text = person.username;
+                txtResOldAmount.Text = (person.quota - (double)amount).ToString();
+                txtResNewAmount.Text = person.quota.ToString();
+                txtResQuota.Text = ((int)(person.quota / pricePage)).ToString();
+
+            }
+            catch
+            {
+
+            }
         }
     }
 }
